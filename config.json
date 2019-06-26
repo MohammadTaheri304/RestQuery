@@ -1,0 +1,18 @@
+{
+  "sources": [
+    {
+      "name": "ds1",
+      "driver": "org.postgresql.ds.PGSimpleDataSource",
+      "server": "postgres://localhost:5432/core",
+      "user": "core",
+      "pass": "core",
+      "queries": [
+        {
+          "name": "q1",
+          "description" : "this is a test query",
+          "query": "select * from fastrac.transactions limit 100"
+        }
+      ]
+    }
+  ]
+}
