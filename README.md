@@ -54,3 +54,4 @@ Save your config in json format into a file and use ```-cf<your-config-file-path
 
 ####Supported Databases
 - Postgres driver="org.postgresql.ds.PGSimpleDataSource"
+- Mysql driver="com.mysql.cj.jdbc.Driver"
