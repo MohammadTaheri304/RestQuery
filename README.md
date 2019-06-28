@@ -36,8 +36,8 @@ Save your config in json format into a file and use ```-cf<your-config-file-path
   "sources": [
     {
       "name": "ds1",
-      "driver": "org.postgresql.ds.PGSimpleDataSource",
-      "server": "postgres://localhost:5432/core",
+      "driver": "org.postgresql.Driver",
+      "server": "jdbc:postgresql://localhost:5432/core",
       "user": "core",
       "pass": "core",
       "queries": [
@@ -47,11 +47,25 @@ Save your config in json format into a file and use ```-cf<your-config-file-path
           "query": "select * from fastrac.transactions limit 100"
         }
       ]
+    },
+    {
+      "name": "ds2",
+      "driver": "com.mysql.jdbc.Driver",
+      "server": "jdbc:mysql://192.168.56.101:3306/t2",
+      "user": "toor",
+      "pass": "toor",
+      "queries": [
+        {
+          "name": "q1",
+          "description" : "this is a test query",
+          "query": "select * from test"
+        }
+      ]
     }
   ]
 }
 ```
 
 ####Supported Databases
-- Postgres driver="org.postgresql.ds.PGSimpleDataSource"
-- Mysql driver="com.mysql.cj.jdbc.Driver"
+- Postgres driver="org.postgresql.Driver"
+- Mysql driver="com.mysql.jdbc.Driver"

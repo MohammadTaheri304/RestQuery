@@ -35,8 +35,7 @@ public class ConnectionTable {
         config.setJdbcUrl(url);
         config.setUsername(user);
         config.setPassword(password);
-        config.setDataSourceClassName(driver);
-//        config.setDataSourceClassName("org.postgresql.ds.PGSimpleDataSource");
+        config.setDriverClassName(driver);
         return new HikariDataSource(config);
     }
 
