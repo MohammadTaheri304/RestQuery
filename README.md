@@ -69,3 +69,4 @@ Save your config in json format into a file and use ```-cf<your-config-file-path
 ####Supported Databases
 - Postgres driver="org.postgresql.Driver"
 - Mysql driver="com.mysql.jdbc.Driver"
+- Mariadb driver="org.mariadb.jdbc.Driver"
