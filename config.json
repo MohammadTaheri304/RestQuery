@@ -2,17 +2,18 @@
   "sources": [
     {
       "name": "ds3",
-      "driver": "org.mariadb.jdbc.Driver",
-      "server": "jdbc:mariadb://192.168.56.101:3306/t2",
-      "user": "toor",
-      "pass": "toor",
+      "driver": "oracle.jdbc.driver.OracleDriver",
+      "server": "jdbc:oracle:thin:@10.9.12.3:1521:PCARD",
+      "user": "CARD_ISSUE",
+      "pass": "123456",
       "queries": [
         {
           "name": "q1",
           "description": "this is a test query",
-          "query": "select * from test"
+          "query": "select * from card_issue.request_action"
         }
       ]
     }
   ]
 }
+

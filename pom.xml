@@ -31,13 +31,20 @@
             <artifactId>mariadb-java-client</artifactId>
             <version>2.4.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.oracle/ojdbc14 -->
+        <!-- https://mvnrepository.com/artifact/com.oracle.jdbc/ojdbc8 -->
+        <dependency>
+            <groupId>com.oracle.jdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>RELEASE</version>
+        </dependency>
 
 
 
         <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
-            <version>3.1.0</version>
+            <version>3.3.1</version>
         </dependency>
 
         <dependency>

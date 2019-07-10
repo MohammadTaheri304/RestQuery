@@ -36,6 +36,7 @@ public class ConnectionTable {
         config.setUsername(user);
         config.setPassword(password);
         config.setDriverClassName(driver);
+        config.setConnectionTestQuery("select * from request_card");
         return new HikariDataSource(config);
     }
 
